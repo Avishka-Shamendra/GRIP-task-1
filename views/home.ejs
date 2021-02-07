@@ -1,0 +1,19 @@
+<%- include('_header') %>
+<div class="container py-4">
+    <div class="text-center card p-3 shadow-lg border-primary rounded">
+        <h3 class="card-title">Welcome!</h3>
+        <hr>
+        <% if(error) { %>
+            <div class="alert alert-danger text-center" role="alert">
+                <%=error%>
+            </div>
+        <%} %>
+        <div class="card-body">
+            <p>Welcome to the demo bank app</p>
+            <a href="/all_customers" class="btn btn-primary" role="btn">Get Started</a>
+        </div>
+
+    </div>
+
+</div>
+<%- include('_footer') %>
